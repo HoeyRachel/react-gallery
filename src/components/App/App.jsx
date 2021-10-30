@@ -18,12 +18,20 @@ function App() {
     likes: 0 
   },
 ]
- 
+const getItems=()=>{
+ axios.get( '/gallery' ).then ((response)=>{
+   console.log(response);
+ }).catch((err)=>{
+   console.log( err );
+   alert( 'GET ERROR not happening');
+ })
+}
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Snapshot of My Life</h1>
         </header>
+        <button onClick={getItems}>Test</button>
         <GalleryList galleryItems={galleryItems}/>
        
           
