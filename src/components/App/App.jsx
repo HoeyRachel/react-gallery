@@ -5,12 +5,19 @@ import axios from 'axios';
 
 
 function App() {
-  const galleryItems = [{
+  const galleryItems = [
+    {
     id: 1, 
     path: 'images/Lucas.jpg', 
     description: 'First Little.', 
     likes: 0
-  }]
+  },
+  { id: 2, 
+    path: 'images/Elliot.jpg', 
+    description: 'Second Little.', 
+    likes: 0 
+  },
+]
  
     return (
       <div className="App">

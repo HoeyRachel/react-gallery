@@ -6,7 +6,6 @@ function GalleryList(props){
     return (
         <div>
             <h1>GalleryList</h1>
-            <p> {JSON.stringify (props)} </p>
             { props.galleryItems.map( imageItem=>(<GalleryItem imageToSend={imageItem}/>))}
             
         </div>
