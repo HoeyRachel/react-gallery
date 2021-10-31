@@ -11,7 +11,7 @@ function GalleryItem(props){
             {
                 show?
                 <h1 onClick={ toggleShow }>{props.imageToSend.description}</h1>:
-                <h1 onClick={ toggleShow }>{props.imageToSend.id}, {props.imageToSend.path}</h1>
+                <img src={props.imageToSend.path} onClick={toggleShow}></img>
             
             }
         </div>
